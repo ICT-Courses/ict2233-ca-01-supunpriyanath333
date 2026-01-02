@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      {/* Section 01 */}
       <section className="container mx-auto px-4 py-10">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold">Featured Books</h2>
@@ -27,6 +28,7 @@ export default function Home() {
         )}
       </section>
 
+      {/* Section 02 */}
       <section className="py-16 bg-white">
   <div className="container mx-auto px-4">
 
@@ -66,8 +68,8 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-
+      
+      {/* Section 03 */}
       <section className="bg-blue-600 text-white py-10 text-center">
         <h3 className="text-lg md:text-2xl font-semibold mb-2">Start Your Library Journey Today</h3>
         <p className="text-sm md:text-base mb-4">Immerse yourself in the rich tradition of Sinhala literature.</p>
