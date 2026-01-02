@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="text-5xl mb-2">📖</div>
           <h1 className="text-2xl md:text-3xl font-semibold">Welcome to Sinhala Book Library</h1>
           <p className="text-sm md:text-base my-3">
-            Explore classic and contemporary Sinhala literature — stories and novels that shaped our culture.
+            Explore classic and contemporary Sinhala literature - stories and novels that shaped our culture.
           </p>
           <a
             href="/books"

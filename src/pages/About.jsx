@@ -6,12 +6,12 @@ export default function About() {
   return (
     <div className="container mx-auto px-4 py-12">
 
-      {/* Page Title */}
+      {/*Title */}
       <h1 className="text-3xl font-bold text-center mb-10">
         About Sinhala Book Library
       </h1>
 
-      {/* Mission Section */}
+    
       <div className="bg-white p-6 rounded-xl shadow-sm border max-w-4xl mx-auto mb-12">
         <h2 className="flex items-center gap-2 text-xl font-semibold mb-3">
           <span className="text-blue-600 text-2xl">📘</span>
@@ -26,13 +26,13 @@ export default function About() {
         </p>
       </div>
 
-      {/* Values Title */}
+      
       <h2 className="text-center text-xl font-semibold mb-8">Our Values</h2>
 
-      {/* Values Section */}
+     
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
 
-        {/* Card 1 */}
+       
         <div className="bg-white p-6 rounded-xl shadow-sm border text-center">
           <div className="text-blue-600 text-3xl mb-3">📚</div>
           <h3 className="font-semibold text-lg mb-2">Literary Excellence</h3>
@@ -42,7 +42,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Card 2 */}
+       
         <div className="bg-white p-6 rounded-xl shadow-sm border text-center">
           <div className="text-blue-600 text-3xl mb-3">💙</div>
           <h3 className="font-semibold text-lg mb-2">Cultural Preservation</h3>
@@ -52,7 +52,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Card 3 */}
+       
         <div className="bg-white p-6 rounded-xl shadow-sm border text-center">
           <div className="text-blue-600 text-3xl mb-3">👥</div>
           <h3 className="font-semibold text-lg mb-2">Community Focus</h3>
@@ -63,7 +63,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Technology Section */}
+      
       <div className="bg-white p-6 rounded-xl shadow-sm border max-w-4xl mx-auto">
         <h2 className="text-xl font-semibold mb-4">Built with Modern Technology</h2>
 

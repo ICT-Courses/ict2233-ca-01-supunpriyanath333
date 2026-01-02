@@ -6,7 +6,7 @@ import useDocumentTitle from "../hooks/useDocumentTitle";
 export default function Home() {
   useDocumentTitle("Home");
   const { data: books, loading, error } = useFetch("/data/books.json", 500);
-  const featured = books ? books.slice(0, 4) : [];
+  const featured = books ? books.slice(0, 6) : [];
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function Home() {
         {error && <p className="text-red-600">{error}</p>}
 
         {books && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
             {featured.map((b) => <BookCard key={b.id} book={b} />)}
           </div>
         )}

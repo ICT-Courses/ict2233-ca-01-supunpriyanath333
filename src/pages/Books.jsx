@@ -10,7 +10,7 @@ export default function Books() {
   const { data: books, loading, error } = useFetch("/data/books.json", 500);
   const [activeGenre, setActiveGenre] = useState("All Books");
 
-  // Generate genre counts
+
   const genres = useMemo(() => {
     if (!books) return [];
 
@@ -26,7 +26,7 @@ export default function Books() {
     ];
   }, [books]);
 
-  // Filter books by genre
+  // Filter
   const filteredBooks = useMemo(() => {
     if (!books) return [];
     if (activeGenre === "All Books") return books;
@@ -36,10 +36,10 @@ export default function Books() {
   return (
     <div className="container mx-auto px-4 py-10">
 
-      {/* Page Title */}
+     
       <h2 className="text-2xl font-semibold mb-4">Book Collection</h2>
 
-      {/* Genre Filter */}
+    
       {books && (
         <CategoryFilter
           categories={genres}
@@ -48,7 +48,7 @@ export default function Books() {
         />
       )}
 
-      {/* Count */}
+      
       {books && (
         <p className="text-gray-600 mb-6">
           Showing {filteredBooks.length} books
@@ -59,7 +59,7 @@ export default function Books() {
       {loading && <p>Loading...</p>}
       {error && <p className="text-red-600">{error}</p>}
 
-      {/* Books Grid */}
+    
       {books && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {filteredBooks.map((book) => (

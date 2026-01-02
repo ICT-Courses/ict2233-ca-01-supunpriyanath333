@@ -17,7 +17,7 @@ export default function BookCard({ book }) {
       {/* TEXT + BUTTON */}
       <div className="flex flex-col flex-1 p-2">
 
-        {/* FIXED TEXT AREA */}
+        {/*TEXT AREA */}
         <div className="h-[80px] overflow-hidden">
           <h3 className="font-semibold text-sm leading-tight line-clamp-2">
             {book.title}
@@ -37,7 +37,7 @@ export default function BookCard({ book }) {
  </div>
         </div>
 
-        {/* BUTTON FIXED AT BOTTOM */}
+        {/* BUTTON AT BOTTOM */}
         <div className="mt-auto">
           <Link
             to={`/books/${book.id}`}

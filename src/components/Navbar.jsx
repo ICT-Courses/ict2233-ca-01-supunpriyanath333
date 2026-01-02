@@ -18,19 +18,27 @@ export default function Navbar() {
 
   return (
     <nav className="bg-gray-100 border-b shadow-sm w-full">
-      <div className="container mx-auto flex justify-between items-center px-4 py-3">
+      <div className="container mx-auto flex justify-between items-center px-1 py-2">
 
         {/* LEFT: LOGO + NAME */}
-        <div className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Logo" className="w-10 h-10" />
+<div className="flex items-center gap-3 h-12">
 
-          <div className="leading-tight">
-            <h1 className="text-blue-700 font-bold text-xl">GRANTHA</h1>
-            <p className="text-gray-600 text-xs -mt-1">Sinhala Book Library</p>
-          </div>
-        </div>
+  {/* Container */}
+  <div className="h-18 w-18 flex-shrink-0">
+    <img
+      src="/images/logo.png"
+      alt="Logo"
+      className="h-18 w-18 object-contain"
+    />
+  </div>
 
-        {/* DESKTOP MENU */}
+  <div className="leading-tight">
+    <h1 className="text-blue-700 font-bold text-xl">GRANTHA</h1>
+    <p className="text-gray-600 text-xs -mt-1">Sinhala Book Library</p>
+  </div>
+</div>
+
+        {/* MENU */}
         <div className="hidden md:flex space-x-2 items-center">
 
           <NavLink
@@ -72,7 +80,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* MOBILE MENU BUTTON */}
+        {/* MOBILE MENU*/}
         <button className="md:hidden" onClick={() => setOpen(!open)}>
           <Menu size={26} className="text-gray-800" />
         </button>

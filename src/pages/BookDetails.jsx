@@ -8,13 +8,13 @@ export default function BookDetails() {
 
   const { data: books, loading, error } = useFetch("/data/books.json", 300);
 
-  // FIX: Book lookup BEFORE conditional render + ALWAYS call hooks first
+ 
   const book = books?.find((b) => String(b.id) === id);
 
-  // Hook must ALWAYS run (cannot be after any conditional return)
+  
   useDocumentTitle(book ? book.title : "Book Details");
 
-  // Now safe to return
+  
   if (loading) return <div className="container mx-auto p-4">Loading...</div>;
   if (error) return <div className="container mx-auto p-4 text-red-600">{error}</div>;
   if (!book) return <div className="container mx-auto p-4">Book not found.</div>;
@@ -70,7 +70,7 @@ export default function BookDetails() {
 
           <hr className="my-6" />
 
-          {/* Info grid */}
+          {/* Info*/}
           <div className="grid md:grid-cols-2 gap-6">
 
             <div>
